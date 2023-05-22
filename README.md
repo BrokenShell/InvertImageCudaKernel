@@ -1,6 +1,7 @@
 # InvertImage CUDA Kernel
 
-This repository contains a CUDA kernel for inverting the colors of an image. The CUDA kernel leverages the power of GPU parallelism to efficiently perform the inversion operation on the image.
+This repository contains a CUDA kernel for inverting the colors of an image. 
+The CUDA kernel leverages the power of GPU parallelism to efficiently perform the inversion operation on the image.
 
 ## Requirements
 
