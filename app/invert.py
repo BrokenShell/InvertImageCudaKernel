@@ -1,5 +1,4 @@
 import os
-import warnings
 
 import numpy as np
 import pycuda.autoinit
@@ -9,8 +8,7 @@ from PIL import Image
 
 
 class InvertImage:
-    warnings.filterwarnings("ignore", category=UserWarning)
-    with open(os.path.join("app", "invert.cu"), 'r') as kernel:
+    with open(os.path.join("app", "invert.cu"), "r") as kernel:
         mod = SourceModule(kernel.read())
     invert_kernel = mod.get_function("invertKernel")
 
